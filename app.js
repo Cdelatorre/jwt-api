@@ -14,11 +14,7 @@ require("./config/db.config");
 /* Config express middlewares */
 
 const app = express();
-app.use(
-  cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:5173",
-  })
-);
+app.use(cors());
 
 app.use(logger("dev"));
 app.use(express.json()); // Para poder tener req.body en peticiones de tipo application/json
