@@ -41,3 +41,5 @@ module.exports.getCurrentUser = (req, res, next) => {
     })
     .catch(next);
 };
+
+/* ESTO ES UN CAMBIO */
